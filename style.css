@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #001f3f, #6a0dad); 
+    background: linear-gradient(to bottom, #001f3f, #6a0dad, black ); 
     color: white;
 }
 .line {
@@ -12,35 +12,71 @@ body {
 }
 
 .title {
-    align-items: center;
+    color: #ffffff;
+    text-align: left;
     
 }
 
 .project{
-    width: 400px;
-    margin-bottom: 300px;
-
-    background-color: linear-gradient(to bottom, black, white);
-
-    padding: 150px;
-    max-width: 500px;;
-
-}
-.text{
-   
-    text-align: left;
-    margin-left: 200px;
-    text-shadow: #001f3f;
- 
+    font-size: 1.8rem;
+    font-weight: bold;
     color: beige;
- 
-    
-    
+    margin-bottom: 10px;
+    margin-right: auto;
+
+
+}
+#project.title {
+    color: aliceblue;
 }
 
+   
+.text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666;
+ }
+
+ .cube {
+    width: 90%; 
+    max-width: 500px; 
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    box-sizing: border-box
+
+
+
+ }
+ #skills .skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#skills .skill {
+    background: #331c9956;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#skills .skill i {
+    font-size: 1.5em;
+    color: #000000;
+}
 .box{
-    width: 150px;
-    height: 75px;
+    width: 15%;
+    height: 20%;
     background-color: rgb(17, 136, 136);
     border: 2px solid black;
     padding:  15px;
@@ -48,7 +84,9 @@ body {
     line-height: 75px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid red;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
     
     
     
@@ -62,5 +100,31 @@ body {
     margin: 75px;
      
     
+}
+
+.boxt {
+  width: 100%;
+  max-width: 300px;  /* You can adjust this to your liking */
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 200px;  /* Adjust the spacing to position it 200px below Sacred Run */
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+
+}
+footer {
+    padding: 10px;
+    text-align: center;    
+    padding-bottom: 100%;
+    color: #ffffff;
+    width: 100%;
+    max-height: 10%;
+}
+
+.photo {
+    width: 500px;
+    height: 250px;
 }
 

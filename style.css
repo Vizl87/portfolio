@@ -104,11 +104,11 @@ body {
 
 .boxt {
   width: 100%;
-  max-width: 300px;  /* You can adjust this to your liking */
+  max-width: 300px;  
   padding: 20px;
   background-color: #f1f1f1;
   border-radius: 8px;
-  margin-top: 200px;  /* Adjust the spacing to position it 200px below Sacred Run */
+  margin-top: 200px;  
   text-align: center;
   font-size: 1.2rem;
   color: #333;

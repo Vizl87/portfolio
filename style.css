@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -14,6 +19,8 @@ body {
 .title {
     color: #ffffff;
     text-align: left;
+
+    text-align: center;
     
 }
 
@@ -108,7 +115,7 @@ body {
   padding: 20px;
   background-color: #f1f1f1;
   border-radius: 8px;
-  margin-top: 200px;  
+  margin-top: 200vh;  
   text-align: center;
   font-size: 1.2rem;
   color: #333;
@@ -119,8 +126,10 @@ footer {
     text-align: center;    
     padding-bottom: 100%;
     color: #ffffff;
-    width: 100%;
+    width: 10%;
     max-height: 10%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .photo {
@@ -128,3 +137,24 @@ footer {
     height: 250px;
 }
 
+
+
+.github-logo {
+    width: 30rem; 
+    height: 30rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+
+.github-logo:hover {
+    transform: scale(1,1.1);
+    filter: hue-rotate(90deg);
+    box-shadow: #001f3f;
+    filter: brightness(1,5);
+}
+
+
+.icon {
+    font-size: 200%;
+    color: white;
+}

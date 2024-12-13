@@ -7,11 +7,46 @@ body{
 }
 
 .photo {
+    width: 50%;
+}
+
+.container {
+    width: 4vh;
+
+}
+
+#projects .project {
+    background: rgb(22, 1, 99);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+
+}
+
+#projects .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#projects .project a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+
+.box {
     width: 750px;
     height: 600px;
     padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
     }
-.text {
+
+
+
+    .text {
     width: 90%; 
     max-width: 500px; 
     padding: 20px;
@@ -26,3 +61,7 @@ body{
     box-sizing: border-box
 
 }
+
+
+
+

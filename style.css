@@ -7,11 +7,29 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #001f3f, #6a0dad, black ); 
+    background: linear-gradient( 45deg, #805404, #582748, #681313, #170563);
+    background-size: 400% 400%; 
     color: white;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+
+    }
+
+    
 }
 .line {
-    height: 3px;
+    height: 1vh;
     color: black;
     border-color: white;
 }
@@ -28,7 +46,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: beige;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
     margin-right: auto;
 
 
@@ -40,17 +58,17 @@ body {
    
 .text {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 1vh;
     color: #666;
  }
 
  .cube {
     width: 90%; 
-    max-width: 500px; 
-    padding: 20px;
+    max-width: 50vh; 
+    padding: 2vh;
     background-color: #121212;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 1vh;
+    margin-top: 2vh;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -64,17 +82,17 @@ body {
  #skills .skill-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2vh ;
     flex-wrap: wrap;
 }
 
 #skills .skill {
     background: #331c9956;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1vh 2vh;
+    border-radius: 2vh;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1vh;
 }
 
 #skills .skill i {
@@ -86,9 +104,9 @@ body {
     height: 20%;
     background-color: rgb(17, 136, 136);
     border: 2px solid black;
-    padding:  15px;
-    margin: 50px;
-    line-height: 75px;
+    padding:  10vh;
+    margin: 5vh;
+    line-height: 5vh;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -103,18 +121,18 @@ body {
     width: 100;
     height: 75;
     border: 3px solid linear-gradient(to bottom, #001f3f, #6a0dad);
-    padding: 10px;
-    margin: 75px;
+    padding: 1vh;
+    margin: 50em;
      
     
 }
 
 .boxt {
   width: 100%;
-  max-width: 300px;  
-  padding: 20px;
+  max-width: 30vh;  
+  padding: 2vh;
   background-color: #f1f1f1;
-  border-radius: 8px;
+  border-radius: 0,8vh;
   margin-top: 200vh;  
   text-align: center;
   font-size: 1.2rem;
@@ -122,7 +140,7 @@ body {
 
 }
 footer {
-    padding: 10px;
+    padding: 1vh;
     text-align: center;    
     padding-bottom: 100%;
     color: #ffffff;
@@ -133,8 +151,8 @@ footer {
 }
 
 .photo {
-    width: 500px;
-    height: 250px;
+    width: 50vh;
+    height: 25vh;
 }
 
 
@@ -157,4 +175,10 @@ footer {
 .icon {
     font-size: 200%;
     color: white;
+}
+
+
+.envelope-logo {
+    width: 30rem;
+    height: 30rem;
 }

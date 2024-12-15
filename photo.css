@@ -1,19 +1,19 @@
 body{
     font-family: sans-serif;
-    text-align: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #6a0dad, black );
+    background: linear-gradient(45deg, #6a0dad, black );
     color: white; 
 }
 
 .photo {
     width: 50%;
+    height: 25vh;
+    margin-left: 1vh;
 }
 
 .container {
-    width: 4vh;
-
-}
+    width: 400 
+}               
 
 #projects .project {
     background: rgb(22, 1, 99);
@@ -21,12 +21,14 @@ body{
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem 0;
+    margin-top: 30vh;
+    margin-left: auto;
 
 }
 
 #projects .project:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -37,26 +39,24 @@ body{
 
 
 .box {
-    width: 750px;
-    height: 600px;
+    width: 75vh;
+    height: 60vh;
     padding: 0%;
-    margin-left: auto;
+
     margin-right: auto;
     }
 
 
 
     .text {
-    width: 90%; 
-    max-width: 500px; 
-    padding: 20px;
+    width: 40vh; 
+    max-width: 50vh; 
+    padding: 1%;
     background-color: #121212;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    border-radius: 1vh;
+    margin-left: 3%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2vh;
     color: white;
     box-sizing: border-box
 

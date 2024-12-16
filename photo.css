@@ -1,19 +1,22 @@
 body{
     font-family: sans-serif;
+    text-align: center;
     min-height: 100vh;
-    background: linear-gradient(45deg, #6a0dad, black );
-    color: white; 
+    background: linear-gradient(to bottom, #6a0dad, black );
+    color: white;
+    align-content: center; 
 }
 
 .photo {
     width: 50%;
-    height: 25vh;
-    margin-left: 1vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
-    width: 400 
-}               
+    width: 4vh;
+
+}
 
 #projects .project {
     background: rgb(22, 1, 99);
@@ -21,14 +24,12 @@ body{
     border-radius: 5px;
     padding: 1rem;
     margin: 1rem 0;
-    margin-top: 30vh;
-    margin-left: auto;
 
 }
 
 #projects .project:hover {
     transform: scale(1.05);
-    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -39,27 +40,87 @@ body{
 
 
 .box {
-    width: 75vh;
-    height: 60vh;
+    width: 750px;
+    height: 600px;
     padding: 0%;
-
+    margin-left: auto;
     margin-right: auto;
     }
 
 
 
     .text {
-    width: 40vh; 
-    max-width: 50vh; 
-    padding: 1%;
+    width: 90%; 
+    max-width: 500px; 
+    padding: 20px;
     background-color: #121212;
-    border-radius: 1vh;
-    margin-left: 3%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
-    font-size: 2vh;
+    font-size: 1rem;
     color: white;
     box-sizing: border-box
 
+}
+
+
+
+.cover {
+    position: relative;
+
+    margin: auto;
+
+    width: 3em;
+    height: 3em;
+    outline: #ddd;
+    border: none;
+    border-radius: 75%;
+    background-color: #6a0dad;
+    transition: 1s all; 
+
+}
+
+
+.cover:hover {
+    background-color: #121212;
+}
+
+
+.project:hover.git {
+    fill: aliceblue;
+}
+
+
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 1vh 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
 }
 
 

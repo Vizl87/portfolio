@@ -2,7 +2,8 @@ body{
     font-family: sans-serif;
     text-align: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #6a0dad, black );
+    background-color: #1e0033; 
+    ;
     color: white;
     align-content: center; 
 }
@@ -94,6 +95,7 @@ body{
 
 
 .topnav {
+    margin-top: absolute;
     background-color: transparent;
     overflow: hidden;
 }
@@ -118,10 +120,7 @@ body{
 
 
 
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
+
 
 
 

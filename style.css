@@ -6,8 +6,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    min-height: 100vh;
-    background-size: 400% 400%; 
+    background-size: 100% 100%; 
     color: white;
     animation: gradient 2s ease infinite;
 }
@@ -17,7 +16,7 @@ body {
     font-weight: 550;
 
     margin-bottom: 1rem;
-    margin: 11rem;
+    margin: 4rem;
 }
 
 .topnav {
@@ -27,6 +26,8 @@ body {
     width: 100%;
 
     /* background-color: transparent; */
+
+    z-index: 9999999999999999;
 
     background-color: #333333;
     box-shadow: 
@@ -47,7 +48,7 @@ body {
 
 .topnav a:hover {
     background-color: transparent;
-    color: black;
+    color: rgb(128, 126, 126);
 }
 
 .topnav a.active {
@@ -56,14 +57,14 @@ body {
 }
 
 .gradient {
-    position: absolute;
-    background: linear-gradient( 45deg, #000000, #0f094d, #6c1191, #ff0000);
-    margin-top: -100%;
+    position: fixed;
+    background: linear-gradient( 45deg, #000000, #0f094d, #6c1191);
+    /* margin-top: -20rem; */
+    top: -20rem;
 
     z-index: -5000;
 
-
-    height: 400rem;
+    height: 200%;
     width: 100%;
 }
 
@@ -78,7 +79,7 @@ body {
     gap: 2vh ;
     flex-wrap: wrap;
 
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 
 #skills .skill {
@@ -92,22 +93,9 @@ body {
 
 #skills .skill i {
     font-size: 1.5em;
-    color: #000000;
+    color: #04AA6D;
 }
 
-@keyframes gradient {
-    0%{
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-
-    }
-}
 .line {
     height: 1vh;
     color: black;
@@ -140,8 +128,8 @@ body {
  }
 
  .cube {
-    width: 90%; 
-    max-width: 50vh; 
+    width: 140vh; 
+    max-width: 140vh; 
     padding: 2vh;
     background-color: #121212;
     border-radius: 1vh;
@@ -151,8 +139,9 @@ body {
     text-align: center;
     font-size: 1rem;
     color: white;
-    box-sizing: border-box
+    box-sizing: border-box;
  }
+
  .card {
     display: block;
     width: 60vh;
@@ -163,42 +152,65 @@ body {
 }
 
 .card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.6s;
+    transition: transform 0.3s;
+
 }
 
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
 
-.card .photo,
-.card .back {
+.card-front,
+.card-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.card .photo {
-    background: url('your-image.jpg') no-repeat center center / cover;
+.card-front img {
+    width: 60vh;
+    height: 35vh;
 }
 
-.card .back {
+.card-back {
     background-color: #1e0033; 
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    align-items: center;
     text-align: center;
+
     font-size: 16px;
     color: beige;
     transform: rotateY(180deg);
 }
+
+.card-back img {
+    position: absolute;
+    left: 0;
+    width: 60vh;
+    height: 35vh;
+    z-index: -20000000000;
+    filter: blur(6px);
+}
+
+.card-back li {
+    font-size: 2rem;
+    padding: 3rem;
+    list-style:none;
+}
+
+.card-back #other-text {
+    font-size: 1.25rem;
+    padding-top: 5rem;
+
+}
+
 
 
 .box{

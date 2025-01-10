@@ -3,9 +3,10 @@ body{
     text-align: center;
     min-height: 100vh;
     background-color: #1e0033; 
-    ;
     color: white;
     align-content: center; 
+
+    overflow: hidden;
 }
 
 .photo {
@@ -109,9 +110,6 @@ body{
     text-decoration: none;
     font-size: 2vh;
 }
-
-
-
 
 .topnav a:hover {
     background-color: #ddd;

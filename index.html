@@ -5,23 +5,16 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-     <title> portfolio </title>
+     <title>portfolio</title>
      <link rel="stylesheet" href="style.css">
-
-
-
-     
 </head>
-
-
 <body>
+     <div class="gradient"></div>
      <div class="topnav">
           <a class="active"> home</a>
           <a href="work.html"> work experience</a>
           <a href="aboutme.html" >About me</a>
      </div>
-
-     <div class="gradient"></div>
      <div class="introduction">
           <h1 class="title">Alex Ojantakanen </h1>  
           <p class="subtitle"> i'm a game developer student at Osao kaukovainio </p>
@@ -35,11 +28,9 @@
                <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
                <div class="skill"><i class="fab fa-python"></i> Python</div>
                <div  class="skill"><i class="fas fa-code"></i> GDScript</div>
-               <div class="skill"><i class="fa-brands fa-js"></i>javascript</div>
 
           </div>
      </section>
-     </hr>
 
      <img href="">
      <div>
@@ -50,11 +41,15 @@
      <p class="cube">I made this game in about 3 months</p>
      <a class="card" href="./sacredrun.html">
          <div class="card-inner">
-             <img class="photo" src="kuva.png" alt="Hard platform game" />
-             <div class="back">Sacred run</div>
+               <div class="card-front">
+                    <img class="photo" src="kuva.png" alt="Hard platform game" />
+               </div>
+               <ul class="card-back">
+                    <img class="photo" src="kuva.png" alt="Hard platform game" />
+                    <li>Sacred run</li>
+                    <li id="other-text">Click for more information...</li>
+               </ul>
          </div>
-     </a>
-     
      </a>
        
      <footer class="cube">
@@ -62,9 +57,9 @@
 
      </footer>
      <section>
-          <footer >
+          <footer>
           <h2 class="center"> contact me </h2>
-          <p> feel free to contact me in my email</p> 
+               <p> feel free to contact me in my email</p> 
           <p class="center" style="text-align: center;">ojantakanenaleksi@gmail.com</p>
           <a class="github-logo" href="https://github.com/Vizl87" target="_blank"><i class="fa-brands fa-github icon"></i>
 
@@ -76,5 +71,6 @@
           </section>
 
      </section>
+</body>
 
 </html>

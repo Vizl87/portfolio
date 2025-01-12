@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #04AA6D;
+    --secondary-color: #333;
+    --background-color: #1e0033;
+    --text-color: #ffffff;
+    --hover-color: rgba(128, 126, 126, 0.8);
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.topnav {
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+
+
+
+    z-index: 9999999999999999;
+
+    background-color: #333333;
+    box-shadow: 
+        0 10px 20px rgba(0,0,0,0.3),
+        0 6px 6px rgba(0,0,0,0.2);
+}
+
+
+.topnav a {
+    float: left;
+    color:  white;
+    text-align: center;
+    padding: 1vh 2vh;
+    text-decoration: none;
+    font-size: 2vh;
+    
+}
+
+.topnav a:hover {
+    background-color: transparent;
+    color: rgb(128, 126, 126);
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.job-box, .job-box2 {
+    position: relative;
+    width: calc(100% - 60vh);
+    padding: 5vh;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    background-color: rgba(4, 170, 109, 0.158);
+    background-color: #000000;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 60vh;
+    margin: 100px auto;
+    text-align: left; 
+}
+
+.job-box {
+    margin-top: -20vh;
+    margin-right: 140vh;
+}
+
+.job-box2 {
+    margin-top: calc(-20vh + 20%);
+    margin-right: 140vh;
+}
+
+.job-place {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.job-description {
+    margin: 10px 0 0;
+    font-size: 16px;
+    text-align: left; 
+}
+
+/* Horizontal rule styles */
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid var(--text-color);
+    width: 100%;
+}

@@ -51,7 +51,7 @@ body{
 
 
 
-    .text {
+.text {
     width: 90%; 
     max-width: 500px; 
     padding: 20px;
@@ -114,6 +114,10 @@ body{
 .topnav a:hover {
     background-color: #ddd;
     color: black;
+}
+hr{
+    margin: 100%;
+    color: #ffffff;
 }
 
 

@@ -56,17 +56,20 @@ body {
     color: white;
 }
 
+
+
 .gradient {
     position: fixed;
-    background: linear-gradient( 45deg, #000000, #0f094d, #6c1191);
-    /* margin-top: -20rem; */
+    background: linear-gradient(45deg, #000000, #0f094d, #6c1191);
     top: -20rem;
-
     z-index: -5000;
-
     height: 200%;
     width: 100%;
 }
+
+
+
+
 
 .introduction {
     margin: 12rem;
@@ -142,13 +145,16 @@ body {
     box-sizing: border-box;
  }
 
- .card {
+
+
+.card {
     display: block;
     width: 60vh;
     height: 35vh;
     margin: 20px auto;
     perspective: 1000px;
     position: relative;
+    cursor: url(kuvapointer.png), pointer; 
 }
 
 .card-inner {
@@ -157,7 +163,6 @@ body {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.3s;
-
 }
 
 .card:hover .card-inner {
@@ -169,7 +174,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* border-radius: 10px; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -181,10 +185,8 @@ body {
 
 .card-back {
     background-color: #1e0033; 
-    /* display: flex; */
     justify-content: center;
     text-align: center;
-
     font-size: 16px;
     color: beige;
     transform: rotateY(180deg);
@@ -202,16 +204,13 @@ body {
 .card-back li {
     font-size: 2rem;
     padding: 3rem;
-    list-style:none;
+    list-style: none;
 }
 
 .card-back #other-text {
     font-size: 1.25rem;
     padding-top: 5rem;
-
 }
-
-
 
 .box{
     width: 15%;
@@ -264,16 +263,6 @@ footer {
     margin-right: auto;
 }
 
-.githublogo {
-    padding: 1vh;
-    text-align: center;    
-    padding-bottom: 100%;
-    color: #ffffff;
-    width: 30%;
-    max-height: 10%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .photo {
     width: 50vh;
@@ -289,17 +278,19 @@ footer {
 
 }
 
-.github-logo:hover {
-    transform: scale(1,1.1);
-    filter: hue-rotate(90deg);
-    box-shadow: #001f3f;
-    filter: brightness(1,5);
-}
 
 
 .icon {
     font-size: 200%;
-    color: white;
+    color: rgb(255, 255, 255);
+}
+
+.icon:hover {
+    color: rgb(0, 0, 0);
+}
+
+.icon:hover .git {
+    fill: black;
 }
 
 

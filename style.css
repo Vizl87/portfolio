@@ -309,3 +309,29 @@ footer {
 .center {
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .mini-title, .introduction, .cube, .projects-container, .box, .boxt, footer {
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .card-front img, .card-back img {
+        width: 100%;
+        height: auto;
+    }
+
+    .photo, .github-logo, .envelope-logo {
+        width: 100%;
+        height: auto;
+    }
+}

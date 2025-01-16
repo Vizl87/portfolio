@@ -121,7 +121,68 @@ hr{
 }
 
 
+@media only screen and (max-width: 770px) {
+    body {
+        font-size: 1rem;
+    }
 
+    .mini-title {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .introduction {
+        margin: 6rem;
+    }
+
+    #skills .skill-list {
+        margin: 6vh;
+    }
+
+    .cube {
+        width: 90vh;
+        max-width: 90vh;
+        padding: 1vh;
+        margin-top: 1vh;
+    }
+
+    .card {
+        width: 80vh;
+        height: 45vh;
+    }
+
+    .card-front img,
+    .card-back img {
+        width: 80vh;
+        height: 45vh;
+    }
+
+    .box {
+        width: 80%;
+        padding: 5vh;
+        margin: 2vh;
+    }
+
+    .boxt {
+        max-width: 80vh;
+        margin-top: 10vh;
+    }
+
+    .photo {
+        width: 40vh;
+        height: 20vh;
+    }
+
+    .github-logo,
+    .envelope-logo {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .icon {
+        font-size: 150%;
+    }
+}
 
 
 

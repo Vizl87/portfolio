@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 :root {
     --primary-color: #04AA6D;
@@ -13,8 +11,6 @@
     --text-color: #ffffff;
     --hover-color: rgba(128, 126, 126, 0.8);
 }
-
-
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -32,29 +28,22 @@ body {
 
 .topnav {
     position: fixed;
-
     top: 0;
     width: 100%;
-
-
-
     z-index: 9999999999999999;
-
     background-color: #333333;
     box-shadow: 
         0 10px 20px rgba(0,0,0,0.3),
         0 6px 6px rgba(0,0,0,0.2);
 }
 
-
 .topnav a {
     float: left;
-    color:  white;
+    color: white;
     text-align: center;
     padding: 1vh 2vh;
     text-decoration: none;
     font-size: 2vh;
-    
 }
 
 .topnav a:hover {
@@ -66,7 +55,6 @@ body {
     background-color: #04AA6D;
     color: white;
 }
-
 
 .job-box, .job-box2 {
     position: relative;
@@ -112,3 +100,5 @@ hr {
     border-top: 1px solid var(--text-color);
     width: 100%;
 }
+
+/* Media queries for tablets */

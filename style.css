@@ -15,6 +15,13 @@ body {
     line-height: 1,6vh;
 }
 
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-bottom: 1rem;
+    margin: 4rem;
+}
 .mini-title {
     font-size: 1.5rem;
     font-weight: 550;
@@ -325,4 +332,11 @@ footer p {
 
 .center {
     text-align: center;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
 }

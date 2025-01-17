@@ -90,14 +90,12 @@ body{
 }
 
 
-.project:hover.git {
-    fill: aliceblue;
-}
+
 
 
 .topnav {
     margin-top: absolute;
-    background-color: transparent;
+    background-color: transparent;  
     overflow: hidden;
 }
 

@@ -79,11 +79,6 @@ body {
     flex-direction: row-reverse;
 }
 
-.job-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(128, 17, 255, 0.445);
-    border-color: var(--primary-color);
-}
 
 .job-icon {
     display: flex;

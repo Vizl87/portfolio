@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <title>portfolio</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <script src="../js/script.js"></script>
+     <style>
+
+     </style>
+</head>
+<body>
+     <div class="background"></div>
+     <div class="topnav">
+          <a class="active"> home</a>
+          <a href="work.html"> work experience</a>
+     </div>
+     <div class="introduction">
+          <h1 class="title">Alex Ojantakanen </h1>  
+            <p class="subtitle"> I'm a studying game development at OSAO vocational school
+                    <br><br>
+                    Usually I play videogames and go to the gym in my freetime.
+                    I'm interested in game development and programming in general.
+            </p>
+     </div>
+     <section id="skills" class="skills">
+          <p class="mini-title">My Skills</p>
+          
+          <div class="skill-list">
+               <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+               <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+               <div class="skill"><i class="fab fa-python"></i> Python</div>
+               <div  class="skill"><i class="fas fa-code"></i> GDScript</div>
+               <div  class="skill"><i class="fa-solid fa-c"></i>C#</div>
+          </div>
+     </section>
+
+     <img href="">
+     <div>
+          <p class="mini-title">My projects</p>
+     </div>
+     
+     <div class="projects-container">
+     <div class="card" onclick="openPopup('sacred-run-popup')">
+          <div class="card-inner">
+               <div class="card-front">
+                    <img class="photo" src="../../images/kuva.png" alt="Hard platform game" />
+                    <div class="card-overlay">
+                         <h3>Sacred Run</h3>
+                         <p>A challenging 2D platformer game</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="card" onclick="openPopup('portfolio-popup')">
+          <div class="card-inner">
+               <div class="card-front">
+                    <img class="photo" src="../../images/portfolio.png" alt="your on this website" />
+                    <div class="card-overlay">
+                         <h3>Portfolio Website</h3>
+                         <p>My personal portfolio showcase</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="card" onclick="openPopup('amis-drift-popup')">
+          <div class="card-inner">
+               <div class="card-front">
+                    <img class="photo" src="../../images/Amisdriftposter.png" alt="Amis Drift project" />
+                    <div class="card-overlay">
+                         <h3>Amis Drift</h3>
+                         <p>Drifting game</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     </div>
+
+     <!-- Popup Modals -->
+     <div id="sacred-run-popup" class="popup-overlay">
+          <div class="popup-content">
+               <span class="close-btn" onclick="closePopup('sacred-run-popup')">&times;</span>
+               <h2>Sacred Run</h2>
+               <img src="../../images/kuva.png" alt="Sacred Run Game" class="popup-image">
+               <p>Sacred Run is a challenging platform game that tests your reflexes and timing. Navigate through dangerous obstacles and reach the end of each level.</p>
+               <div class="popup-details">
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                         <li>GDScript</li>
+                         <li>Godot Engine</li>
+                    </ul>
+                    <h3>Features:</h3>
+                    <ul>
+                         <li>Diffucult 2D platfromer game</li>
+                         <li>Custom pixel art graphics</li>
+                    </ul>
+               </div>
+               <a href="../html/sacredrun.html" class="popup-btn">View Full Details</a>
+          </div>
+     </div>
+
+     <div id="portfolio-popup" class="popup-overlay">
+          <div class="popup-content">
+               <span class="close-btn" onclick="closePopup('portfolio-popup')">&times;</span>
+               <h2>Portfolio Website</h2>
+               <img src="../../images/portfolio.png" alt="Portfolio Website" class="popup-image">
+               <p>This is my personal portfolio website showcasing my skills, projects, and experience in game development and programming.</p>
+               <div class="popup-details">
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                    </ul>
+                    <h3>Features:</h3>
+                    <ul>
+                         <li>Project showcase</li>
+                         <li>Contact information</li>
+                    </ul>
+               </div>
+               <p class="popup-note">You're currently viewing this site</p>
+          </div>
+     </div>
+
+              <div id="amis-drift-popup" class="popup-overlay">
+                   <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup('amis-drift-popup')">&times;</span>
+                        <h2>Amis Drift</h2>
+                        <img src="../../images/Amisdriftposter.png" alt="AmisDrift" class="popup-image">
+                        <p></p>
+                        <div class="popup-details">
+                             <h3>Technologies Used:</h3>
+                             <ul>
+                                  <li>Unity</li>
+                                  <li>C#</li>
+                             </ul>
+                             <h3>what features I added to the game:</h3>
+                             <ul>
+                              <li>Car controller
+                                   <ul class="nested-features">
+                                        <li>drifting mechanics</li>
+                                        <li>steering</li>
+                                        <li>turbo</li>
+                                        <li>everything related to the cars movement and what i can do</li>
+                                   </ul>
+                              </li>
+                              <li>score system</li>
+                              <li>safefile system</li>
+                             </ul>
+                        </div>
+                         <a href="../html/amisdrift.html" class="popup-btn">View Full Details</a>
+                   </div>
+              </div>
+
+               <section id="work" class="work-container">
+               <h1 class="page-title">Work Experience</h1>
+               <div class="timeline">
+                    <div class="job-card">
+                         <div class="job-icon">
+                              <i class="fas fa-utensils"></i>
+                         </div>
+                         <div class="job-content">
+                              <h2 class="job-place">Sodexo</h2>
+                              <p class="job-role">Kitchen Helper</p>
+                              <p class="job-duration">2 weeks - Summer Job</p>
+                              <p class="job-description">I was helping around the kitchen for 2 weeks. Assisted with food preparation, cleaning, and general kitchen operations.</p>
+                         </div>
+                    </div>
+
+                    <div class="job-card">
+                         <div class="job-icon">
+                              <i class="fas fa-shopping-cart"></i>
+                         </div>
+                         <div class="job-content">
+                              <h2 class="job-place">K-supermarket</h2>
+                              <p class="job-role">Stock Assistant</p>
+                              <p class="job-duration">Part-time</p>
+                              <p class="job-description">Restocked shelves and organized the aisles. Maintained store presentation and helped with inventory management.</p>
+                         </div>
+                    </div>
+                    <div class="job-card">
+                         <div class="job-icon">
+                              <i class="fas fa-utensils"></i>
+                         </div>
+                         <div class="job-content">
+                              <h2 class="job-place">Sodexo</h2>
+                              <p class="job-role">Kitchen Helper</p>
+                              <p class="job-duration">2 weeks - Summer Job</p>
+                              <p class="job-description">I was helping around the kitchen for 2 weeks. Assisted with food preparation, cleaning, and general kitchen operations again.</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </footer>
+     <section>
+          <footer>
+          <h2 class="center"> contact me </h2>
+               <p> feel free to contact me in my email</p> 
+          <p class="center" style="text-align: center;">ojantakanenaleksi@gmail.com</p>
+          <p class="copyright">&copy; Copyright 2026 Alex Ojantakanen. All rights reserved.</p>
+          <a class="github-logo" href="https://github.com/Vizl87" target="_blank"><i class="fa-brands fa-github icon"></i>
+          </a>
+          </footer>
+          <section>
+          </section>
+     </section>
+</body>
+
+</html>

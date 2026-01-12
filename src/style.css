@@ -9,7 +9,6 @@
     --accent-dark: #083066;
 }
 
-/* Enable smooth scrolling for in-page anchors */
 html {
     scroll-behavior: smooth;
 }
@@ -35,15 +34,14 @@ body {
     margin: 4rem;
     display: flex;
     justify-content: center;
-    position: flex;
+    position: relative;
 }
 .mini-title {
     font-size: 1.5rem;
     font-weight: 550;
-    margin-bottom: 1rem;
-    margin: 4rem;
-    position: flex;
-    
+    margin: 4rem 0;
+    display: block;
+    text-align: center;
 }
 
 .topnav {
@@ -186,10 +184,9 @@ body {
 .title {
     color: #ffffff;
 
+    margin: 4rem 0;
     text-align: center;
-    
 }
-
 .project{
     font-size: 1.8rem;
     font-weight: bold;
@@ -206,7 +203,7 @@ body {
     font-size: 1rem;
     margin-top: 1vh;
     color: #666;
-    position: flex;
+    position: static;
  }
 
  .cube {
@@ -347,7 +344,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 20rem;/* Added margin-top to create a gap */
+    margin-top: 20rem;
     box-shadow: 
         0 -5px 15px #020033CC,
         0 -10px 30px #4aa6ff80,
@@ -415,7 +412,6 @@ footer p {
     text-align: left;
 }
 
-/* Popup Modal Styles */
 .popup-overlay {
     display: none;
     position: fixed;

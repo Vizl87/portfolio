@@ -65,7 +65,7 @@ body {
 }
 
 .info-card {
-    background: linear-gradient(180deg,#071941 0%, #0b2e66 100%); /* blue panels */
+    background: linear-gradient(180deg,#071941 0%, #0b2e66 100%); 
     padding: 2rem;
     border-radius: 15px;
     backdrop-filter: blur(6px);

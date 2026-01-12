@@ -139,6 +139,25 @@ body {
 	font-size: 1.1rem;
 }
 
+.info-card .cta-link,
+.info-card a {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.15rem;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	display: inline-block;
+	margin-top: 0.5rem;
+	transition: color 0.18s ease, transform 0.12s ease;
+}
+
+.info-card .cta-link:hover,
+.info-card a:hover {
+	color: #d8b3ff;
+	transform: translateY(-2px);
+	text-decoration: none;
+}
+
 .tech-list {
 	display: flex;
 	flex-wrap: wrap;

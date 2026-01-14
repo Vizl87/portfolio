@@ -141,6 +141,22 @@ body {
     width: 100%;
 }
 
+/* Background canvas for particles and drift marks */
+#bg-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2500; /* behind nav but above background */
+    pointer-events: none;
+    display: block;
+}
+
+/* drift marks are drawn on canvas; hide on small screens to save perf */
+@media (max-width: 768px) {
+    #bg-canvas { display: none; }
+}
+
 
 
 
@@ -760,6 +776,26 @@ footer p {
     .job-place {
         font-size: 1.5rem;
     }
+}
+
+/* About section centering */
+.about-container {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.about-container p {
+    color: #eaf6ff;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.about-container p.small {
+    color: #cfeaff;
+    margin-top: 0.75rem;
+    font-size: 1.2rem;
 }
 
 /* Pixel trail (retro game-style) */

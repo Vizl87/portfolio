@@ -1,258 +1,192 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.8">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-     <title>portfolio</title>
-     <link rel="stylesheet" href="src/style.css">
-     <script src="src/script.js"></script>
-     <style>
-
-     </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js" ></script> 
 </head>
 <body>
-     <canvas id="bg-canvas" aria-hidden="true"></canvas>
-     <div class="background"></div>
-     <div class="topnav">
-          <a class="active"> home</a>
-          <a href="#work"> work experience</a>
-          <a href="https://www.canva.com/design/DAF8w7yXXhE/B9wgx_Ks9gR6uHeomgdSqg/view?utm_content=DAF8w7yXXhE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74332292ca" target="_blank" rel="noopener noreferrer">CV</a>
-     </div>
-     <div class="introduction">
-          <h1 class="title">Alex Ojantakanen </h1>  
-            <p class="subtitle"> I am a game development student at OSAO vocational school. I enjoy designing gameplay, programming game mechanics (C#, GDScript, Blueprints). I'm motivated to learn teamwork, expand my portfolio, and contribute to game projects.
-                    <br><br>
-            </p>
-     </div>
-     <section id="skills" class="skills">
-          <p class="mini-title">My Skills and tools I use</p>
-          
-          <div class="skill-list">
-               <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-               <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-               <div class="skill"><i class="fab fa-python"></i> Python</div>
-               <div class="skill"><i class="fas fa-code"></i> GDScript</div>
-               <div class="skill"><i class="fa-solid fa-c"></i>C#</div>
-               <div class="skill"><i class="fa-solid fa-laptop-code"></i> Visual Studio Code</div>
-               <div class="skill"><i class="fa-solid fa-cubes"></i> Unity</div>
-               <div class="skill"><i class="fa-solid fa-gamepad"></i> Godot</div>
-               <div class="skill"><i class="fa-solid fa-gamepad"></i> Unreal Engine</div>
-               <div class="skill"><i class="fa-solid fa-image"></i> Adobe tools, photoshop, the basics of xd and illustrator</div>
-               <div class="skill"><i class="fab fa-git-alt"></i>git</div>
-               <div class="skill"><i class="fa-brands fa-github"></i>Copilot</div>
-               <div class="skill"><i class="fa-brands fa-github"></i>GitHub</div>
-
-
-     </section>
-
-     <img href="">
-     <div>
-          <p class="mini-title">My projects</p>
-     </div>
-     
-     <div class="projects-container">
-     <div class="card" onclick="openPopup('sacred-run-popup')">
-          <div class="card-inner">
-               <div class="card-front">
-                    <img class="photo" src="images/kuva.png" alt="Hard platform game" />
-                    <div class="card-overlay">
-                         <h3>Sacred Run</h3>
-                         <p>A challenging 2D platformer game</p>
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div class="card" onclick="openPopup('portfolio-popup')">
-          <div class="card-inner">
-               <div class="card-front">
-                    <img class="photo" src="images/portfolio.png" alt="your on this website" />
-                    <div class="card-overlay">
-                         <h3>Portfolio Website</h3>
-                         <p>My personal portfolio showcase</p>
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div class="card" onclick="openPopup('amis-drift-popup')">
-          <div class="card-inner">
-               <div class="card-front">
-                    <img class="photo" src="images/Amisdriftposter.png" alt="Amis Drift project" />
-                    <div class="card-overlay">
-                         <h3>Amis Drift</h3>
-                         <p>Drifting game</p>
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div class="card" onclick="openPopup('Horror-game-popup')">
-          <div class="card-inner">
-               <div class="card-front">
-                    <img class="photo" src="images/unreal_poster.png" alt="Unreal Engine Game" />
-                    <div class="card-overlay">
-                         <h3>Horror game</h3>
-                         <p>psychological horror</p>
-                    </div>
-               </div>
-          </div>
-     </div>
-     </div>
-
-     <!-- Popup Modals -->
-     <div id="sacred-run-popup" class="popup-overlay">
-          <div class="popup-content">
-               <span class="close-btn" onclick="closePopup('sacred-run-popup')">&times;</span>
-               <h2>Sacred Run</h2>
-               <img src="images/kuva.png" alt="Sacred Run Game" class="popup-image">
-               <p>Sacred Run is a challenging platform game that tests your reflexes and timing. Navigate through dangerous obstacles and reach the end of each level.</p>
-               <div class="popup-details">
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                         <li>GDScript</li>
-                         <li>Godot Engine</li>
-                    </ul>
-                    <h3>Features:</h3>
-                    <ul>
-                         <li>Diffucult 2D platfromer game</li>
-                         <li>Custom pixel art graphics</li>
-                    </ul>
-               </div>
-               <a href="src/sacredrun.html" class="popup-btn">View Full Details</a>
-          </div>
-     </div>
-
-     <div id="portfolio-popup" class="popup-overlay">
-          <div class="popup-content">
-               <span class="close-btn" onclick="closePopup('portfolio-popup')">&times;</span>
-               <h2>Portfolio Website</h2>
-               <img src="images/portfolio.png" alt="Portfolio Website" class="popup-image">
-               <p>This is my personal portfolio website showcasing my skills, projects, and experience in game development and programming.</p>
-               <div class="popup-details">
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                         <li>HTML</li>
-                         <li>CSS</li>
-                         <li>JavaScript</li>
-                    </ul>
-                    <h3>Features:</h3>
-                    <ul>
-                         <li>Project showcase</li>
-                         <li>Contact information</li>
-                    </ul>
-               </div>
-               <p class="popup-note">You're currently viewing this site</p>
-          </div>
-     </div>
-
-              <div id="amis-drift-popup" class="popup-overlay">
-                   <div class="popup-content">
-                        <span class="close-btn" onclick="closePopup('amis-drift-popup')">&times;</span>
-                        <h2>Amis Drift</h2>
-                        <img src="images/Amisdriftposter.png" alt="AmisDrift" class="popup-image">
-                        <p></p>
-                        <div class="popup-details">
-                             <h3>Technologies Used:</h3>
-                             <ul>
-                                  <li>Unity</li>
-                                  <li>C#</li>
-                             </ul>
-                             <h3>what features I added to the game:</h3>
-                             <ul>
-                              <li>Car controller
-                                   <ul class="nested-features">
-                                        <li>drifting mechanics</li>
-                                        <li>steering</li>
-                                        <li>turbo</li>
-                                        <li>everything related to the cars movement</li>
-                                   </ul>
-                              </li>
-                              <li>score system</li>
-                              <li>safefile system</li>
-                             </ul>
-                        </div>
-                         <a href="src/amisdrift.html" class="popup-btn">View Full Details</a>
-                   </div>
-              </div>
-
-              <div id="Horror-game-popup" class="popup-overlay">
-                   <div class="popup-content">
-                        <span class="close-btn" onclick="closePopup('Horror-game-popup')">&times;</span>
-                        <h2>Unreal Project</h2>
-                        <img src="images/unreal_poster.png" alt="Unreal Engine Project" class="popup-image">
-                        <p>Unreal Engine project focusing on horror, it was also my first time being project manager</p>
-                        <div class="popup-details">
-                             <h3>Technologies Used:</h3>
-                             <ul>
-                                  <li>Unreal Engine</li>
-                                  <li>Blueprints</li>
-                             </ul>
-                             <h3>Features I made for the game:</h3>
-                             <ul>
-                                  <li>Game UI</li>
-                                  <li>AI Enemy</li>
-                                  <li>Rng curse system</li>
-                             </ul>
-                        </div>
-                   </div>
-              </div>
-
-               <section id="work" class="work-container">
-               <h1 class="page-title">Work Experience</h1>
-               <div class="timeline">
-                    <div class="job-card">
-                         <div class="job-icon">
-                              <i class="fas fa-utensils"></i>
-                         </div>
-                         <div class="job-content">
-                              <h2 class="job-place">Sodexo</h2>
-                              <p class="job-role">Kitchen Helper</p>
-                              <p class="job-duration">2 weeks - Summer Job</p>
-                              <p class="job-description">I was helping around the kitchen for 2 weeks. Assisted with food preparation, cleaning, and general kitchen operations.</p>
-                         </div>
-                    </div>
-
-                    <div class="job-card">
-                         <div class="job-icon">
-                              <i class="fas fa-shopping-cart"></i>
-                         </div>
-                         <div class="job-content">
-                              <h2 class="job-place">K-supermarket</h2>
-                              <p class="job-role">Stock Assistant</p>
-                              <p class="job-duration">Part-time</p>
-                              <p class="job-description">Restocked shelves and organized the aisles. Maintained store presentation and helped with inventory management.</p>
-                         </div>
-                    </div>
-                    <div class="job-card">
-                         <div class="job-icon">
-                              <i class="fas fa-utensils"></i>
-                         </div>
-                         <div class="job-content">
-                              <h2 class="job-place">Sodexo</h2>
-                              <p class="job-role">Kitchen Helper</p>
-                              <p class="job-duration">2 weeks - Summer Job</p>
-                              <p class="job-description">I was helping around the kitchen for 2 weeks. Assisted with food preparation, cleaning, and general kitchen operations again.</p>
-                         </div>
-                    </div>
-               </div>
-          </section>
-     <section id="about" class="about-container">
-          <h1 class="page-title">About Me</h1>
-          <p class="small">I enjoy Playing Games and going to the gym on my free time, i also love pets,I often listen to music</p>
-          <p class="small">Currently focused on improving my programming skills and exploring game design principles And be a better team member (more communicative).</p>
-     </section>
-     </footer>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="background"></div>
+  <nav class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#work">Work experience</a>
+    <a href="https://www.canva.com/design/DAF8w7yXXhE/B9wgx_Ks9gR6uHeomgdSqg/view?utm_content=DAF8w7yXXhE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h74332292ca" target="_blank" rel="noopener noreferrer">CV</a>
+  </nav>
+  <main id="home">
+    <section class="intro">
+      <h1 class="title">Alex Ojantakanen</h1>
+      <p class="subtitle">I’m a game development student at OSAO vocational school. I enjoy programming game mechanics, and learning teamwork, coding languages, different game engines through game projects.</p>
+    </section>
      <section>
-          <footer>
-          <h2 class="center"> contact me </h2>
-               <p> feel free to contact me</p> 
-          <a class="social-logo" href="mailto:ojantakanenaleksi@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
-          <p class="copyright">&copy; Copyright 2026 Alex Ojantakanen. All rights reserved.</p>
-          <a class="social-logo" href="https://github.com/Vizl87" target="_blank" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github icon" aria-hidden="true"></i></a>
-          </footer>
-          <section>
-          </section>
+     <h2 class="mini-title">My skills</h2>
+     <div class="skills-box">
+     <div class="skill-group">
+     <h3> coding languages i have used</h3>
+     <div class="skill">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Javascript</p>
+          <p>Python</p>
+          <p>GDScript</p>
+          <p>C#</p>
+          <p>Mysql</p>
+          <p>C</p>
+     </div>
+     </div>
+     <div class="skill-group">
+          <h3>Engines</h3>
+          <div class="skill">
+          <p>Unity</p>
+          <p>Godot</p>
+          <p>Unreal Engine</p>
+          </div>
+     </div>
+     <div class="skill-group">
+          <h3>Other</h3>
+          <div class="skill">
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>visual studio code</p>
+          <p>adobe tools, photoshop, the basics of xd and illustrator</p>
+          <p>github</p>
+          <p>git</p>
+          <p>figma</p>
+          <p>node.js</p>
+          </div>
+     </div>
+     </div>
      </section>
-</body>
+    <section>
+      <h2 class="mini-title">My projects</h2>
+      <div class="projects-container">
+        <div class="project-card-wrap">
+          <input type="checkbox" id="sacredrun-modal" class="modal-toggle" hidden>
+          <label class="card" for="sacredrun-modal">
+            <img class="photo" src="images/kuva.png" alt="Sacred Run" <button style="cursor: url('images/kuvapointer.png'), auto;">
+            <div class="card-overlay">
+              <h3>Sacred Run</h3>
+            </div>
+          </label>
+          <div class="modal-overlay">
+            <label class="modal-backdrop" for="sacredrun-modal"></label>
+            <div class="modal-card">
+              <label class="close-btn" for="sacredrun-modal" aria-label="Close">×</label>
+              <h2>Sacred Run</h2>
+              <img src="images/kuva.png" alt="Sacred Run" class="popup-image">
+              <p>A Dark Souls-inspired 2D platformer.</p>
+              <p>This was the first game I created. The objective is to find bones scattered across the platforms. The game draws inspiration from the challenging nature of Dark Souls and blends it into a classic platformer style.</p>
+              <div class="popup-details">
+                <h3>Technologies Used</h3>
+                <ul><li>GDScript</li><li>Godot Engine</li><li>Pixel art</li></ul>
+                <h3>Key Features</h3>
+                <ul><li>Challenging platformer gameplay</li><li>Dark Souls-inspired difficulty</li><li>Custom pixel art graphics</li><li>Bone collection objective</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-wrap">
+          <input type="checkbox" id="amisdrift-modal" class="modal-toggle" hidden>
+          <label class="card" for="amisdrift-modal">
+            <img class="photo" src="images/Amisdriftposter.png" alt="Amis Drift">
+            <div class="card-overlay">
+              <h3>Amis Drift</h3>
+            </div>
+          </label>
+          <div class="modal-overlay">
+            <label class="modal-backdrop" for="amisdrift-modal"></label>
+            <div class="modal-card">
+              <label class="close-btn" for="amisdrift-modal" aria-label="Close">×</label>
+              <h2>Amis Drift</h2>
+              <img src="images/Amisdriftposter.png" alt="Amis Drift" class="popup-image">
+              <p>This was my first group project and a classic racing game.</p>
+              <p>The game was showcased and playable at the Oulu2026 opening festival, and it also reached the Bit1 2026 final.</p>
+              <p><a href="https://github.com/Vizl87/race_game" target="_blank" rel="noopener noreferrer">GitHub repository</a></p>
+              <p><a href="https://store.steampowered.com/app/4446910/AmisDrift/" target="_blank" rel="noopener noreferrer">Steam page</a></p>
+              <div class="popup-details">
+                <h3>Technologies Used</h3>
+                <ul><li>Unity</li><li>C#</li></ul>
+                <h3>What I worked on</h3>
+                <ul><li>Car controller</li><li>Drifting mechanics</li><li>Turbo and steering</li><li>Score system</li><li>Save file system</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="project-card-wrap">
+          <input type="checkbox" id="portfolio-modal" class="modal-toggle" hidden>
+          <label class="card" for="portfolio-modal">
+            <img class="photo" src="images/portfolio.png" alt="Portfolio website">
+            <div class="card-overlay">
+              <h3>Portfolio Website</h3>
+            </div>
+          </label>
+          <div class="modal-overlay">
+            <label class="modal-backdrop" for="portfolio-modal"></label>
+            <div class="modal-card">
+              <label class="close-btn" for="portfolio-modal" aria-label="Close">×</label>
+              <h2>Portfolio Website</h2>
+              <img src="images/portfolio.png" alt="Portfolio website" class="popup-image">
+              <p>This portfolio is a tiny project only meant to show my skills and other projects, and a little about me</p>
+              <div class="popup-details">
+                <h3>Tools</h3> 
+                <ul><li>HTML</li><li>CSS</li><li>Javascript</li></ul>
+                <h3>Highlights</h3>
+                <ul><li>Project cards with HTML-only popups</li><li>Responsive layout for desktop</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="work-container">
+      <h2 class="page-title">Work experience</h2>
+      <div class="timeline">
+        <div class="job-card">
+          <div class="job-icon"><i class="fas fa-utensils"></i></div>
+          <div class="job-content">
+            <h3 class="job-place">Sodexo</h3>
+            <p class="job-role">Kitchen Helper</p>
+            <p class="job-duration">2 weeks - summer job</p>
+            <p class="job-description">Helped in the kitchen with food prep, cleaning, and daily operations but most importantly i leanred to work with others.</p>
+          </div>
+        </div>
+        <div class="job-card">
+          <div class="job-icon"><i class="fas fa-shopping-cart"></i></div>
+          <div class="job-content">
+            <h3 class="job-place">K-supermarket</h3>
+            <p class="job-role">worker</p>
+            <p class="job-duration">work experience week</p>
+            <p class="job-description">Restocked shelves and kept the store organized and presentable, leanrned to work with others and how to acutally talk to customers.</p>
+          </div>
+        </div>
+      </div>
+     <div class="job-card">
+          <div class="job-icon"><i class="fas fa-utensils"></i></div>
+          <div class="job-content">
+            <h3 class="job-place">Sodexo</h3>
+            <p class="job-role">Kitchen Helper</p>
+            <p class="job-duration">2 weeks - summer job</p>
+            <p class="job-description">Helped in the kitchen with food prep, cleaning, and daily operations, learned to work with others.</p>
+          </div>
+     </div>
+    </section>
+    <section id="about" class="about-container">
+      <h2 class="page-title">About me</h2>
+      <p class="small">I enjoy playing games, going to the gym, listening to music, and spending time with pets.</p>
+      <p class="small">I’m currently focused on improving my programming and game design skills while becoming a better team member.</p>
+    </section>
+  </main>
+  <footer>
+    <h2 class="center">Contact me</h2>
+    <p>Feel free to reach out.</p>
+    <a class="social-logo" href="mailto:ojantakanenaleksi@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+    <a class="social-logo" href="https://github.com/Vizl87" target="_blank" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github icon" aria-hidden="true"></i></a>
+    <p class="copyright">© 2026 Alex Ojantakanen</p>
+  </footer>
+
+</body>
 </html>

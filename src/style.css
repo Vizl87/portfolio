@@ -9,9 +9,7 @@
 	--accent-dark: #083066;
 }
 
-html {
-	scroll-behavior: smooth;
-}
+
 
 body {
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -317,6 +315,7 @@ main {
 .work-container,
 .about-container {
 	margin-top: 3rem;
+	scroll-margin-top: 7rem;
 }
 
 .page-title {

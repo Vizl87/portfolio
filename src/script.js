@@ -35,22 +35,6 @@
             navbar.style.transform = scrollTop > 100 ? 'translateY(-100%)' : 'translateY(0)';
         });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-     const workLink = document.querySelector('.topnav a[href="work.html"], .topnav a[href="#work"]');
-     if (workLink) {
-          workLink.addEventListener('click', function(e) {
-               e.preventDefault();
-               const target = document.getElementById('work');
-               if (target) {
-                    const navOffset = 120;
-                    const top = target.getBoundingClientRect().top + window.pageYOffset - navOffset;
-                    window.scrollTo({ top: top, behavior: 'smooth' });
-               }
-          });
-     }
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("bg-canvas");
     if (!canvas) return;
